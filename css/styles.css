@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* colores futboleros */
+/* los colores que me gustaron por tematica de futbol los pongo en variables para que sea mas limpio */
 :root {
     --verde-cesped: #2e7d32;    /* header y footer */
     --amarillo-arbitro: #fbc02d; /* botones */
@@ -17,7 +17,7 @@
     --blanco: #ffffff;             /* fondo de tarjetas */
 }
 
-/* letra de toda la web */
+/* arial es lo que se ve en todos lados */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--gris-fondo);
@@ -25,9 +25,8 @@ body {
     line-height: 1.6;
 }
 
-/* ======================================== */
-/* ESTRUCTURA PARA FOOTER PEGADO EN TODAS */
-/* ======================================== */
+/* asi el footer se queda aabjo */
+
 .pagina {
     display: flex;
     flex-direction: column;
@@ -42,9 +41,8 @@ main {
     width: 100%;
 }
 
-/* ======================================== */
-/* HEADER */
-/* ======================================== */
+
+/*esto es la barra de arriba*/
 header {
     background-color: var(--verde-cesped);
     color: white;
@@ -85,9 +83,7 @@ nav a.activo {
     font-weight: bold;
 }
 
-/* ======================================== */
-/* TITULOS */
-/* ======================================== */
+/* los titulos de las paginas*/
 .pagina-titulo {
     font-size: 30px;
     color: var(--verde-cesped);
@@ -102,12 +98,10 @@ nav a.activo {
     text-align: center;
 }
 
-/* ======================================== */
-/* HERO */
-/* ======================================== */
+/* la parte de arriba de inicio */
 .hero {
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 20px; /* mas adelante lo ajusto mejor*/
     background-color: #ffffff;
     border-radius: 10px;
     margin-bottom: 40px;
@@ -125,9 +119,7 @@ nav a.activo {
     margin-bottom: 20px;
 }
 
-/* ======================================== */
-/* BOTONES */
-/* ======================================== */
+/* los botones de tono amarillo*/
 .boton {
     display: inline-block;
     background-color: var(--amarillo-arbitro);
@@ -153,17 +145,18 @@ nav a.activo {
     background-color: #f9a825;
 }
 
-/* ======================================== */
-/* TARJETAS DE PRODUCTOS */
-/* ======================================== */
+
+/* toda la parte de las camisetas */
+
 .productos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    object-fit: cover;
     gap: 25px;
     margin: 30px 0;
 }
 
-.producto-card {
+.caja-camiseta {
     background-color: var(--blanco);
     border-radius: 8px;
     padding: 15px;
@@ -173,29 +166,27 @@ nav a.activo {
     cursor: pointer;
 }
 
-.producto-card:hover {
+.caja-camiseta:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(46, 125, 50, 0.2);
     border: 1px solid var(--verde-cesped);
 }
 
-.producto-card:active {
+.caja-camiseta:active {
     transform: scale(0.98);
     background-color: #f5f5f5;
 }
 
-.producto-card img {
+.caja-camiseta img {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
-     width: 100%;
-    height: 250px;           /* todas las imágenes con la misma altura */
-    object-fit: cover;       /* recorta la imagen para que encaje sin deformarse */
-    border-radius: 5px;
-    margin-bottom: 10px;
+    object-fit: cover;      
+   
+   
 }
 
-.producto-card h4 {
+.product-card h4 {
     font-size: 18px;
     color: var(--verde-cesped);
     margin: 8px 0;
@@ -207,25 +198,27 @@ nav a.activo {
     color: var(--verde-oscuro);
 }
 
-/* ======================================== */
-/* MULTIMEDIA */
-/* ======================================== */
+
+/* el video que se incluye en la parte de abajo de las camisetas en servicio hacer scroll*/
+
 .multimedia {
     margin: 50px 0;
     text-align: center;
 }
-
+.video-descripcion{
+    color: var(--verde-cesped);
+   font-size: large;
+}
 .video-container {
     max-width: 800px;
     margin: 15px auto;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
 }
 
-/* ======================================== */
-/* CONTACTO */
-/* ======================================== */
+/* par la pagina de contactar */
 .contacto-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -292,9 +285,8 @@ nav a.activo {
     margin-top: 5px;
 }
 
-/* ======================================== */
-/* FOOTER */
-/* ======================================== */
+
+/* el footer pie de pagina*/
 footer {
     background-color: var(--verde-cesped);
     color: white;
@@ -313,9 +305,7 @@ footer {
     margin: 5px 0;
 }
 
-/* ======================================== */
-/* RESPONSIVE */
-/* ======================================== */
+/* para que se adapte bien a otros disposivitos cmo moviles el responsive */
 @media (max-width: 700px) {
     .header-container {
         flex-direction: column;
@@ -352,4 +342,58 @@ footer {
     .hero h2 {
         font-size: 28px;
     }
+
+/* la pijadita del disclaimer valla guerra me dió */
+
+.disclaimer {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 999999 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.disclaimer > div {
+    background: white !important;
+    padding: 40px !important;
+    text-align: center !important;
+    border-radius: 10px !important;
+    max-width: 500px !important;
+    width: 90% !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+}
+
+.disclaimer h2 {
+    color: #d32f2f !important;
+    margin-bottom: 20px !important;
+    font-size: 28px !important;
+}
+
+.disclaimer p {
+    font-size: 18px !important;
+    margin: 10px 0 !important;
+    color: #333 !important;
+}
+
+.disclaimer button {
+    background-color: #2e7d32 !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px 30px !important;
+    font-size: 16px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    margin-top: 20px !important;
+    font-weight: bold !important;
+}
+
+.disclaimer button:hover {
+    background-color: #1b5e20 !important;
 }
