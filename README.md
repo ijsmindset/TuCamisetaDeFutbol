@@ -1,4 +1,5 @@
 Tienda de Camisetas de Fútbol
+
 Proyecto desarrollado como parte del ciclo de Desarrollo de Aplicaciones Web (DAW). Se trata de una página web estática creada únicamente con HTML y CSS, cuyo objetivo es simular una tienda online de camisetas de fútbol y servir como base para futuros desarrollos más avanzados.
 
 Aviso legal (Disclaimer)
@@ -39,6 +40,7 @@ Proyecto realizado por Iván ijdev como parte del ciclo de Desarrollo de Aplicac
 **** ENGLISH version ****
 
 Football Jersey Store
+
 Project developed as part of the Web Application Development (DAW) program. It is a static website built exclusively with HTML and CSS, designed to simulate an online football jersey store and serve as a foundation for more advanced future developments.
 
 Legal Notice (Disclaimer)
