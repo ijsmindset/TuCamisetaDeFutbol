@@ -1,4 +1,4 @@
-Tienda de Camisetas de Fútbol
+Tienda de Camisetas de Fútbol.
 
 Proyecto desarrollado como parte del ciclo de Desarrollo de Aplicaciones Web (DAW). Se trata de una página web estática creada únicamente con HTML y CSS, cuyo objetivo es simular una tienda online de camisetas de fútbol y servir como base para futuros desarrollos más avanzados.
 
