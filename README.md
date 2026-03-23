@@ -45,3 +45,37 @@ Además, la estructura está pensada para poder reutilizarse como plantilla en o
 ## Autor
 
 Proyecto realizado por Iván ijdev como parte del ciclo de Desarrollo de Aplicaciones Web (DAW).
+
+**** ENGLISH version ****
+
+Football Jersey Store
+Project developed as part of the Web Application Development (DAW) program. It is a static website built exclusively with HTML and CSS, designed to simulate an online football jersey store and serve as a foundation for more advanced future developments.
+Legal Notice (Disclaimer)
+This project is for academic purposes only.
+The images used belong to their respective owners and are employed solely for educational use.
+The prices, products, and brands shown are simulations and do not represent a real store.
+Project Description
+The website is composed of several pages accessible from a main menu:
+- Home: general presentation of the store.
+- Jerseys: main catalog, including a small embedded video that appears when scrolling.
+- Contact: basic form to simulate sending inquiries.
+- Legal Notice: page dedicated to the project’s disclaimer.
+The design is intended to be simple, clear, and easy to expand, allowing future additions such as programming logic or backend integration.
+Technologies Used
+- HTML5 for the site structure.
+- CSS3 for layout and styling.
+No JavaScript or server-side languages were used, as the main goal was to practice layout and organization for a multipage website.
+Project Structure
+(You can fill this section with your folder tree if needed.)
+Project Objective
+The purpose of this website is to practice layout, multipage structure, and resource organization.
+Additionally, the structure is designed to be reusable as a template for other niches (clothing, electronics, digital products, etc.) or to add functionality through JavaScript or a backend.
+Planned Improvements
+- Add JavaScript interactivity.
+- Implement a backend to manage products.
+- Create a real shopping cart system.
+- Improve responsive design.
+- Integrate a database to store products and prices.
+Author
+Project created by Iván ijdev as part of the Web Application Development (DAW) program.
+
